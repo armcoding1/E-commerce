@@ -1,12 +1,24 @@
 include head 
-
-nav.navbar.navbar-expand-lg.bg-body-tertiary
-    .container-fluid
-        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-            span.navbar-toggler-icon 
-        .collapse.navbar-collapse#navbarSupportedContent
-            ul.navbar-nav.me-auto.mb-2.mb-lg-0 
-                li.nav-item 
-                    a.nav-link.active(href="/" aria-current="page") Home 
-                li.nav-item 
-                    a.nav-link(href="#") Link 
+.sidebar 
+    ul.sidebar__list.list-reset
+        a.sidebar__logo(href="/") Logo
+        li.sidebar__item 
+        if isDashboard
+            a.sidebar__link.active(href="/dashboard") Dashboard
+        else
+            a.sidebar__link(href="/dashboard") Dashboard
+        li.sidebar__item
+        if isOrders
+            a.sidebar__link.active(href="/orders") Orders 
+        else
+            a.sidebar__link(href="/orders") Orders 
+        li.sidebar__item 
+        if isShop
+            a.sidebar__link.active(href="/shop") Shop
+        else
+            a.sidebar__link(href="/shop") Shop
+        li.sidebar__item 
+        if isWishlist
+            a.sidebar__link.active(href="/wishlist") Wishlist
+        else 
+            a.sidebar__link(href="/wishlist") Wishlist 
