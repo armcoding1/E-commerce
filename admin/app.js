@@ -1,6 +1,6 @@
 const express = require("express");
-const indexRouter = require("./routes/indexRouter");
 const morgan = require("morgan");
+const indexRouter = require("./routes/indexRouter");
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));

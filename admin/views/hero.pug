@@ -8,11 +8,12 @@ section.hero
             li.hero__item 
                 a.hero__link About 
             li.hero__item 
-                a.hero__link Campground
+                a.hero__link(href="/camp") Campground
             li.hero__item 
                 a.hero__link Contact
-            li.hero__item 
-                button.btn.hero__btn BOOK
+            li.hero__item.d-flex.gap-2
+                a(href="/signup").btn.hero__btn Sign up
+                a(href="/login").btn.hero__btn Login
     .container
         p.hero__descr Let’s Make S’more Memories
         h1.hero__title Camp is more than just a word, it’s an experience!

@@ -257,3 +257,225 @@ body {
 .bonfire__btn:hover {
     background-color: #FFFFFF;
 }
+
+.booking__title {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.booking__img {
+    width: 100%;
+    margin-bottom: 39px;
+}
+
+.booking__list {
+    gap: 32px;
+}
+
+.booking__item-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.booking__subtitle {
+    color: #2D2D2D;
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 86px;
+}
+
+.booking__item-subtitle {
+    color: #345E40;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.booking__item-descr {
+    color: #555555;
+    font-weight: 500;
+    max-width: 677px;
+}
+
+.person-info {
+    color: #555555;
+    font-weight: 500;
+}
+
+.booking__btn {
+    background-color: #345E40;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 50px;
+    border-radius: 10px;
+}
+
+.booking__btn:hover {
+    background-color: green;
+    color: #FFFFFF;
+}
+
+.news__btn:hover {
+    background-color: #345E40;
+    color: #FFFFFF;
+}
+
+.news__btn {
+    border: 2px solid #345E40;
+    padding: 8px 25px;
+}
+
+.booking {
+    margin-bottom: 130px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.news {
+    margin-bottom: 130px;
+}
+
+.news__list {
+    gap: 30px;
+}
+
+.news__subtitle {
+    font-size: 50px;
+    color: #2D2D2D;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.news__title {
+    margin-bottom: 13px;
+}
+
+.news__img {
+    margin-bottom: 43px;
+}
+
+.news__descr {
+    font-size: 21px;
+    color: #2D2D2D;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.gallery__title {
+    font-size: 50px;
+    color: #2D2D2D;
+    font-weight: 700;
+}
+
+.gallery__descr {
+    color: #555555;
+    font-weight: 400;
+    max-width: 387px;
+}
+
+.gallery__img {
+    max-width: 800px;
+}
+
+.gallery {
+    margin-bottom: 130px;
+}
+
+.footer {
+    background-color: #345E40;
+    padding: 110px 150px;
+}
+
+.footer__title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #FFFFFF;
+    max-width: 750px;
+    margin-bottom: 37px;
+}
+
+.footer__input {
+    border: none;
+    border-bottom: 1px solid #F8F5F0;
+    background-color: transparent;
+    padding: 0 50px;
+    color: #FFFFFF;
+}
+
+.footer__input:focus::placeholder {
+    color: transparent;
+}
+
+.footer__input::placeholder {
+    color: #FFFFFF;
+}
+
+.input-container {
+    position: relative;
+    max-width: 500px;
+    margin-bottom: 20px;
+    margin-bottom: 34px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #F8F5F0;
+    outline: none;
+}
+
+.next-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+.next-arrow:hover {
+    cursor: pointer;
+}
+
+.footer__license {
+    color: #FFFFFF;
+}
+
+.footer__descr {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__list {
+    gap: 50px;
+    margin-bottom: 33px;
+}
+
+.footer__contacts {
+    color: #F8F5F0;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer__contact {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 23px;
+}
+
+.footer__icons {
+    gap: 35px;
+}
