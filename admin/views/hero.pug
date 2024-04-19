@@ -1,18 +1,22 @@
 section.hero
+    .video-container
+        video(autoplay muted loop)
+            source(src="camping.mp4" type="video/mp4")
     .hero__header.d-flex.justify-content-between.align-items-center
         a.hero__logo(href="/")
             img.hero__img(src="/img/logo.png" alt="Logo")
         ul.hero__list.list-reset.d-flex.gap-5.align-items-center
             li.hero__item 
-                a.hero__link Home 
+                a.hero__link(href="/") Home 
             li.hero__item 
-                a.hero__link About 
+                a.hero__link(href="#about") About 
             li.hero__item 
-                a.hero__link Campground
+                a.hero__link(href="/#campground") Campground
             li.hero__item 
-                a.hero__link Contact
-            li.hero__item 
-                button.btn.hero__btn BOOK
+                a.hero__link(href="#footer") Contact
+            li.hero__item.d-flex.gap-2
+                a(href="/signup").btn.hero__btn Sign up
+                a(href="/login").btn.hero__btn Login
     .container
         p.hero__descr Let’s Make S’more Memories
         h1.hero__title Camp is more than just a word, it’s an experience!
