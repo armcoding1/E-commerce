@@ -26,5 +26,6 @@ exports.login = async (req, res, next) => {
     }
 
     const token = signToken(user._id);
+    console.log(token);
     res.redirect("/");
 };
