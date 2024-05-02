@@ -5,6 +5,7 @@ include head
             form(action="/signup" method="post")#signup-form
                 h1.signup-title sign up
                 .input-container
+                    input(type="text" required placeholder="Name*").signup__input.mb-3#signup-name
                     input(type="email" required placeholder="Email*").signup__input.mb-3#signup-email
                     input(type="password" required placeholder="Password*").signup__input.mb-3#signup-password
                     input(type="password" required placeholder="Password Confirm*").signup__input#signup-password-confirm

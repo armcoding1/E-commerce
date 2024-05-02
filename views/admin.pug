@@ -1,3 +1,23 @@
 include head 
 .container 
-    h1.mt-5 Welcome to Admin panel
+    h1.mt-5.mb-5 Welcome to the Admin panel
+    table.table 
+        thead 
+            tr 
+                th(scope="col") id
+                th(scope="col") name
+                th(scope="col") email
+                th(scope="col") role 
+                th(scope="col") actions
+        tbody 
+            each user of users
+                tr
+                    td= user._id
+                    td=user.name
+                    td=user.email
+                    td
+                        form(action=`/admin/change-role/${user._id}` method="post")#role-form
+                            input(type="text" name="role" value=`${user.role}`)#role-input
+                            input(type="hidden" value=`${user._id}`)#role-id
+                    td
+                        button.btn.btn-danger.delete-btn(data-id=`${user._id}`) Delete

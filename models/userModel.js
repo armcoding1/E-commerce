@@ -3,6 +3,10 @@ import validator from "validator";
 import bcrypt from "bcrypt";
 
 const userSchema = Schema({
+    name: {
+        type: String,
+        required: [true, "Please provide your name"]
+    },
     email: {
         type: String,
         required: [true, "Please provide your email"],
