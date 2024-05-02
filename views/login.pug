@@ -1,0 +1,13 @@
+include head
+.login
+    .container.d-flex.justify-content-center.align-items-center.h-100
+        .form
+            form(action="/login" method="post")#login-form
+                h1.signup-title log in
+                .input-container
+                    input(type="email" required placeholder="Email*").login__input.mb-3#login-email
+                    input(type="password" required placeholder="Password*").login__input.mb-3#login-password
+                .d-flex.gap-2
+                    span Don't have an account? 
+                    a(href="/signup").signup-login Sign up
+                button.btn.btn-signup(type="submit") Log in
